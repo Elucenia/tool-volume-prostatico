@@ -1,0 +1,208 @@
+{
+  "tool": {
+    "id": "volume-prostatico",
+    "title": "Volume prostático (elipsoide)",
+    "short": "Volume da próstata pelas três medidas",
+    "desc": "Calcule o volume da próstata pela fórmula do elipsoide (π/6 × comprimento × largura × altura) a partir das medidas do ultrassom ou da ressonância.",
+    "lead": "Estima o volume da próstata a partir dos três diâmetros medidos no ultrassom ou na ressonância. Opcionalmente, calcula também a densidade do PSA.",
+    "spec": [
+      "urologia",
+      "radiologia-e-diagnostico-por-imagem"
+    ],
+    "fields": [
+      [
+        "long",
+        "Diâmetro longitudinal (craniocaudal)",
+        "num",
+        {
+          "min": 1,
+          "max": 15,
+          "step": 0.01,
+          "unit": "cm",
+          "ph": "4,5"
+        }
+      ],
+      [
+        "transv",
+        "Diâmetro transverso (laterolateral)",
+        "num",
+        {
+          "min": 1,
+          "max": 15,
+          "step": 0.01,
+          "unit": "cm",
+          "ph": "5,0"
+        }
+      ],
+      [
+        "ap",
+        "Diâmetro anteroposterior",
+        "num",
+        {
+          "min": 1,
+          "max": 15,
+          "step": 0.01,
+          "unit": "cm",
+          "ph": "3,5"
+        }
+      ],
+      [
+        "psa",
+        "PSA total (opcional, para a densidade)",
+        "num",
+        {
+          "min": 0.1,
+          "max": 1000,
+          "step": 0.01,
+          "unit": "ng/mL",
+          "ph": "4,0",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p>Volume (mL) = π/6 × longitudinal × transverso × anteroposterior (cm), ou seja, cerca de 0,52 × produto das três medidas.</p><p>Densidade do PSA = PSA ÷ volume.</p>",
+    "table": [
+      [
+        "Volume",
+        "Leitura prática"
+      ],
+      [
+        "&lt; 30 mL",
+        "Sem aumento significativo"
+      ],
+      [
+        "30 a 80 mL",
+        "Aumento; considerado na escolha do tratamento da HPB"
+      ],
+      [
+        "&gt; 80 mL",
+        "Próstata volumosa: influencia a técnica cirúrgica"
+      ]
+    ],
+    "tips": [
+      "Meça as três dimensões nos planos corretos: transverso e anteroposterior no corte axial; longitudinal no corte sagital.",
+      "O ultrassom abdominal (suprapúbico) exige bexiga cheia e é menos preciso que o transretal ou a ressonância.",
+      "O volume em mL corresponde aproximadamente ao peso em gramas (densidade próxima de 1).",
+      "O volume orienta a escolha entre bloqueador alfa, inibidor da 5-alfa-redutase e técnicas cirúrgicas (ressecção, enucleação, prostatectomia aberta)."
+    ],
+    "sources": [
+      [
+        "Terris MK, Stamey TA. Determination of prostate volume by transrectal ultrasound. J Urol, 1991.",
+        "https://doi.org/10.1016/S0022-5347(17)38508-7"
+      ],
+      [
+        "Lerner LB et al. Management of lower urinary tract symptoms attributed to benign prostatic hyperplasia: AUA guideline part I, initial work-up and medical management. J Urol, 2021.",
+        "https://doi.org/10.1097/JU.0000000000002183"
+      ]
+    ],
+    "cases": [
+      [
+        "4 × 4,5 × 3,5 cm: 33 mL",
+        {
+          "long": 4,
+          "transv": 4.5,
+          "ap": 3.5
+        },
+        {
+          "raw": {
+            "vol": 32.987
+          },
+          "main": "33",
+          "level": "info",
+          "tol": 0.01
+        }
+      ],
+      [
+        "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        {
+          "long": 5,
+          "transv": 6,
+          "ap": 5,
+          "psa": 4
+        },
+        {
+          "raw": {
+            "vol": 78.54,
+            "psad": 0.0509
+          },
+          "verdict": "30 a 80",
+          "tol": 0.01
+        }
+      ],
+      [
+        "6 × 7 × 6 cm: 132 mL",
+        {
+          "long": 6,
+          "transv": 7,
+          "ap": 6
+        },
+        {
+          "raw": {
+            "vol": 131.947
+          },
+          "verdict": "&gt; 80",
+          "tol": 0.01
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "cases": [
+        {
+          "label": "Elipsoide2×3×4: π/6×24=4π mL",
+          "input": {
+            "long": 2,
+            "transv": 3,
+            "ap": 4
+          },
+          "expected": {
+            "vol": 12.566370614359172
+          },
+          "status": "passed",
+          "failures": []
+        },
+        {
+          "label": "Dobrar três eixos multiplica volume por8",
+          "input": {
+            "long": 4,
+            "transv": 6,
+            "ap": 8
+          },
+          "expected": {
+            "vol": 100.53096491487338
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}
