@@ -1,11 +1,11 @@
-/* tool-volume-prostatico · Elucenia · https://github.com/Elucenia/tool-volume-prostatico
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-volume-prostatico · ELUCENIA · https://github.com/Elucenia/tool-volume-prostatico
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"volume-prostatico","title":"Volume prostático (elipsoide)","fields":[["long","Diâmetro longitudinal (craniocaudal)","num",{"min":1,"max":15,"step":0.01,"unit":"cm","ph":"4,5"}],["transv","Diâmetro transverso (laterolateral)","num",{"min":1,"max":15,"step":0.01,"unit":"cm","ph":"5,0"}],["ap","Diâmetro anteroposterior","num",{"min":1,"max":15,"step":0.01,"unit":"cm","ph":"3,5"}],["psa","PSA total (opcional, para a densidade)","num",{"min":0.1,"max":1000,"step":0.01,"unit":"ng/mL","ph":"4,0","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
