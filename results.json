@@ -1,0 +1,305 @@
+{
+  "id": "volume-prostatico",
+  "at": "2026-10-05T17:30:14.995Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/volume-prostatico/calculator.js",
+    "bytes": 5074,
+    "sha256": "df0c163d0f19e0790a57f42edc406691df987836c47ce9b52351ed950c166550"
+  },
+  "cases": [
+    {
+      "name": "4 × 4,5 × 3,5 cm: 33 mL",
+      "input": {
+        "long": 4,
+        "transv": 4.5,
+        "ap": 3.5
+      },
+      "obtained": {
+        "id": "volume-prostatico",
+        "main": [
+          "33",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "raw": {
+          "vol": 32.98672286269283,
+          "psad": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "33",
+          "obtained": "33",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.vol",
+          "expected": 32.987,
+          "obtained": 32.98672286269283,
+          "tolerance": 0.01,
+          "difference": 0.0002771373071723815,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.vol",
+          "expected": 32.98672286269283,
+          "obtained": 32.98672286269283,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.psad",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "33",
+          "obtained": "33",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL",
+          "obtained": "mL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+      "input": {
+        "long": 5,
+        "transv": 6,
+        "ap": 5,
+        "psa": 4
+      },
+      "obtained": {
+        "id": "volume-prostatico",
+        "main": [
+          "79",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "raw": {
+          "vol": 78.53981633974482,
+          "psad": 0.050929581789406514
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.vol",
+          "expected": 78.54,
+          "obtained": 78.53981633974482,
+          "tolerance": 0.01,
+          "difference": 0.00018366025518901097,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.psad",
+          "expected": 0.0509,
+          "obtained": 0.050929581789406514,
+          "tolerance": 0.01,
+          "difference": 0.000029581789406513126,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.vol",
+          "expected": 78.53981633974482,
+          "obtained": 78.53981633974482,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.psad",
+          "expected": 0.050929581789406514,
+          "obtained": 0.050929581789406514,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "79",
+          "obtained": "79",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL",
+          "obtained": "mL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "6 × 7 × 6 cm: 132 mL",
+      "input": {
+        "long": 6,
+        "transv": 7,
+        "ap": 6
+      },
+      "obtained": {
+        "id": "volume-prostatico",
+        "main": [
+          "132",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "raw": {
+          "vol": 131.94689145077132,
+          "psad": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.vol",
+          "expected": 131.947,
+          "obtained": 131.94689145077132,
+          "tolerance": 0.01,
+          "difference": 0.00010854922868475114,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.vol",
+          "expected": 131.94689145077132,
+          "obtained": 131.94689145077132,
+          "tolerance": 1.3194689145077131e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.psad",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "132",
+          "obtained": "132",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL",
+          "obtained": "mL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 42,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

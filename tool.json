@@ -5,6 +5,7 @@
     "short": "Volume da próstata pelas três medidas",
     "desc": "Calcule o volume da próstata pela fórmula do elipsoide (π/6 × comprimento × largura × altura) a partir das medidas do ultrassom ou da ressonância.",
     "lead": "Estima o volume da próstata a partir dos três diâmetros medidos no ultrassom ou na ressonância. Opcionalmente, calcula também a densidade do PSA.",
+    "kind": "Calculadora",
     "spec": [
       "urologia",
       "radiologia-e-diagnostico-por-imagem"
@@ -61,30 +62,6 @@
       ]
     ],
     "formula": "<p>Volume (mL) = π/6 × longitudinal × transverso × anteroposterior (cm), ou seja, cerca de 0,52 × produto das três medidas.</p><p>Densidade do PSA = PSA ÷ volume.</p>",
-    "table": [
-      [
-        "Volume",
-        "Leitura prática"
-      ],
-      [
-        "&lt; 30 mL",
-        "Sem aumento significativo"
-      ],
-      [
-        "30 a 80 mL",
-        "Aumento; considerado na escolha do tratamento da HPB"
-      ],
-      [
-        "&gt; 80 mL",
-        "Próstata volumosa: influencia a técnica cirúrgica"
-      ]
-    ],
-    "tips": [
-      "Meça as três dimensões nos planos corretos: transverso e anteroposterior no corte axial; longitudinal no corte sagital.",
-      "O ultrassom abdominal (suprapúbico) exige bexiga cheia e é menos preciso que o transretal ou a ressonância.",
-      "O volume em mL corresponde aproximadamente ao peso em gramas (densidade próxima de 1).",
-      "O volume orienta a escolha entre bloqueador alfa, inibidor da 5-alfa-redutase e técnicas cirúrgicas (ressecção, enucleação, prostatectomia aberta)."
-    ],
     "sources": [
       [
         "Terris MK, Stamey TA. Determination of prostate volume by transrectal ultrasound. J Urol, 1991.",
@@ -145,9 +122,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -160,40 +134,155 @@
       "testedAt": "2026-09-25",
       "total": 2,
       "passed": 2,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Elipsoideπ/6×3 diâmetros/Terris Stamey 1991; PSAdensidade PSA/volume",
+    "implementationVersion": "volume-prostatico@native-2026-10-03+df0c163d0f19",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2016815/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Volume (mL) = π/6 × longitudinal × transverso × anteroposterior (cm), ou seja, cerca de 0,52 × produto das três medidas. Densidade do PSA = PSA ÷ volume.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "long",
+            "label": "Diâmetro longitudinal (craniocaudal)",
+            "type": "num",
+            "min": 1,
+            "max": 15,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "transv",
+            "label": "Diâmetro transverso (laterolateral)",
+            "type": "num",
+            "min": 1,
+            "max": 15,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ap",
+            "label": "Diâmetro anteroposterior",
+            "type": "num",
+            "min": 1,
+            "max": 15,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "psa",
+            "label": "PSA total (opcional, para a densidade)",
+            "type": "num",
+            "min": 0.1,
+            "max": 1000,
+            "unit": "ng/mL",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "263bcdaa06337fd4e2cbf4711b2d68bb46554cd69dc96e1e08a85df69258f1fc"
+      },
+      "sourceEditions": [
         {
-          "label": "Elipsoide2×3×4: π/6×24=4π mL",
-          "input": {
-            "long": 2,
-            "transv": 3,
-            "ap": 4
+          "citation": "Terris MK, Stamey TA. Determination of prostate volume by transrectal ultrasound. J Urol, 1991.",
+          "url": "https://doi.org/10.1016/S0022-5347(17)38508-7",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Determination of prostate volume by transrectal ultrasound.",
+            "year": "1991",
+            "firstPublicationDate": "1991-05-01",
+            "doi": "10.1016/s0022-5347(17)38508-7",
+            "pmid": "2016815",
+            "journal": "The Journal of urology",
+            "authors": "Terris MK, Stamey TA."
           },
-          "expected": {
-            "vol": 12.566370614359172
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/2016815/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "4c14ade9ec43942d456ffdfb608d338c8626db9e47a47fce478f0bfe771c760c",
+          "matchedBy": "exact-DOI-or-PMID"
         },
         {
-          "label": "Dobrar três eixos multiplica volume por8",
-          "input": {
-            "long": 4,
-            "transv": 6,
-            "ap": 8
+          "citation": "Lerner LB et al. Management of lower urinary tract symptoms attributed to benign prostatic hyperplasia: AUA guideline part I, initial work-up and medical management. J Urol, 2021.",
+          "url": "https://doi.org/10.1097/JU.0000000000002183",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Management of Lower Urinary Tract Symptoms Attributed to Benign Prostatic Hyperplasia: AUA GUIDELINE PART I-Initial Work-up and Medical Management.",
+            "year": "2021",
+            "firstPublicationDate": "2021-08-13",
+            "doi": "10.1097/ju.0000000000002183",
+            "pmid": "34384237",
+            "journal": "The Journal of urology",
+            "authors": "Lerner LB, McVary KT, Barry MJ, Bixler BR, Dahm P, Das AK, Gandhi MC, Kaplan SA, Kohler TS, Martin L, Parsons JK, Roehrborn CG, Stoffel JT, Welliver C, Wilt TJ."
           },
-          "expected": {
-            "vol": 100.53096491487338
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/34384237/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "48c83d2cf13decdb0ce6b2d4318e2c620d854de0629365ed7a97c48208e38a43",
+          "matchedBy": "exact-DOI-or-PMID"
         }
-      ]
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 2,
+        "passed": 2,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "df0c163d0f19e0790a57f42edc406691df987836c47ce9b52351ed950c166550"
+    },
+    "limits": "A fórmula elipsoide é uma aproximação geométrica. O estudo citado comparou estimativas por ultrassom transretal ao peso de peças cirúrgicas e observou desempenho diferente entre métodos e tamanhos. Não confirma automaticamente equivalência entre RM e ultrassom ou diagnóstico por densidade de PSA.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.169Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não confirma equivalência de RM com TRUS ou corte PSA por densidade. Peso da peça não é idêntico a volume medido individualmente."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/volume-prostatico/calculator.js",
+    "bytes": 5074,
+    "sha256": "df0c163d0f19e0790a57f42edc406691df987836c47ce9b52351ed950c166550"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "2c1a8d2b01a1917ee7ab5b8f9b9230805fdef21113e9ca6fad0914e58bc568b0",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "8172b1fdd8682f6c7787d7b94f19f3101027c1ccfdf3b9293b95ca3cc96688b8",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 2,
+      "sha256": "8172b1fdd8682f6c7787d7b94f19f3101027c1ccfdf3b9293b95ca3cc96688b8",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

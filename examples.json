@@ -1,6 +1,14 @@
 [
   {
-    "label": "4 × 4,5 × 3,5 cm: 33 mL",
+    "id": "volume-prostatico",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "4 × 4,5 × 3,5 cm: 33 mL",
+    "originalInput": {
+      "long": 4,
+      "transv": 4.5,
+      "ap": 3.5
+    },
     "input": {
       "long": 4,
       "transv": 4.5,
@@ -14,15 +22,37 @@
       "level": "info",
       "tol": 0.01
     },
-    "originalInput": {
-      "long": 4,
-      "transv": 4.5,
-      "ap": 3.5
+    "recordedResult": {
+      "main": [
+        "33",
+        "mL"
+      ],
+      "label": "Volume prostático estimado",
+      "raw": {
+        "vol": 32.98672286269283,
+        "psad": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+    "id": "volume-prostatico",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+    "originalInput": {
+      "long": 5,
+      "transv": 6,
+      "ap": 5,
+      "psa": 4
+    },
     "input": {
       "long": 5,
       "transv": 6,
@@ -37,16 +67,36 @@
       "verdict": "30 a 80",
       "tol": 0.01
     },
-    "originalInput": {
-      "long": 5,
-      "transv": 6,
-      "ap": 5,
-      "psa": 4
+    "recordedResult": {
+      "main": [
+        "79",
+        "mL"
+      ],
+      "label": "Volume prostático estimado",
+      "raw": {
+        "vol": 78.53981633974482,
+        "psad": 0.050929581789406514
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "6 × 7 × 6 cm: 132 mL",
+    "id": "volume-prostatico",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "6 × 7 × 6 cm: 132 mL",
+    "originalInput": {
+      "long": 6,
+      "transv": 7,
+      "ap": 6
+    },
     "input": {
       "long": 6,
       "transv": 7,
@@ -59,11 +109,24 @@
       "verdict": "&gt; 80",
       "tol": 0.01
     },
-    "originalInput": {
-      "long": 6,
-      "transv": 7,
-      "ap": 6
+    "recordedResult": {
+      "main": [
+        "132",
+        "mL"
+      ],
+      "label": "Volume prostático estimado",
+      "raw": {
+        "vol": 131.94689145077132,
+        "psad": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
