@@ -1,0 +1,682 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "volume-prostatico",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/volume-prostatico/calculator.js",
+    "sha256": "df0c163d0f19e0790a57f42edc406691df987836c47ce9b52351ed950c166550",
+    "bytes": 5074
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "volume-prostatico",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "4 × 4,5 × 3,5 cm: 33 mL",
+      "originalInput": {
+        "long": 4,
+        "transv": 4.5,
+        "ap": 3.5
+      },
+      "input": {
+        "long": 4,
+        "transv": 4.5,
+        "ap": 3.5
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "vol": 32.987
+        },
+        "main": "33",
+        "level": "info",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "33",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "raw": {
+          "vol": 32.98672286269283,
+          "psad": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/volume-prostatico/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "long": 4,
+            "transv": 4.5,
+            "ap": 3.5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/volume-prostatico/calculate",
+          "startedAt": "2026-10-05T17:40:01.448Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "volume-prostatico",
+              "main": [
+                "33",
+                "mL"
+              ],
+              "label": "Volume prostático estimado",
+              "raw": {
+                "vol": 32.98672286269283,
+                "psad": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1ad2282096a9f2d7318865ec967177653cff1190788336931000fd0334e3d6e6",
+          "bytes": 175,
+          "elapsedMs": 3.470900000014808
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/volume-prostatico/calculate",
+        "startedAt": "2026-10-05T17:40:01.448Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "volume-prostatico",
+            "main": [
+              "33",
+              "mL"
+            ],
+            "label": "Volume prostático estimado",
+            "raw": {
+              "vol": 32.98672286269283,
+              "psad": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1ad2282096a9f2d7318865ec967177653cff1190788336931000fd0334e3d6e6",
+        "bytes": 175,
+        "elapsedMs": 3.470900000014808
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "33",
+            "obtained": "33",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.vol",
+            "expected": 32.987,
+            "obtained": 32.98672286269283,
+            "tolerance": 0.01,
+            "difference": 0.0002771373071723815,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.vol",
+            "expected": 32.98672286269283,
+            "obtained": 32.98672286269283,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.psad",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "33",
+            "obtained": "33",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mL",
+            "obtained": "mL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "volume-prostatico",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+      "originalInput": {
+        "long": 5,
+        "transv": 6,
+        "ap": 5,
+        "psa": 4
+      },
+      "input": {
+        "long": 5,
+        "transv": 6,
+        "ap": 5,
+        "psa": 4
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "vol": 78.54,
+          "psad": 0.0509
+        },
+        "verdict": "30 a 80",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "79",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "raw": {
+          "vol": 78.53981633974482,
+          "psad": 0.050929581789406514
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/volume-prostatico/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "long": 5,
+            "transv": 6,
+            "ap": 5,
+            "psa": 4
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/volume-prostatico/calculate",
+          "startedAt": "2026-10-05T17:40:01.762Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "volume-prostatico",
+              "main": [
+                "79",
+                "mL"
+              ],
+              "label": "Volume prostático estimado",
+              "raw": {
+                "vol": 78.53981633974482,
+                "psad": 0.050929581789406514
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "412ecbad7c6e59bc459fc2942148f979eed86d01b62c9d1d34cc3c060adf685a",
+          "bytes": 191,
+          "elapsedMs": 5.255600000004051
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/volume-prostatico/calculate",
+        "startedAt": "2026-10-05T17:40:01.762Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "volume-prostatico",
+            "main": [
+              "79",
+              "mL"
+            ],
+            "label": "Volume prostático estimado",
+            "raw": {
+              "vol": 78.53981633974482,
+              "psad": 0.050929581789406514
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "412ecbad7c6e59bc459fc2942148f979eed86d01b62c9d1d34cc3c060adf685a",
+        "bytes": 191,
+        "elapsedMs": 5.255600000004051
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.vol",
+            "expected": 78.54,
+            "obtained": 78.53981633974482,
+            "tolerance": 0.01,
+            "difference": 0.00018366025518901097,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.psad",
+            "expected": 0.0509,
+            "obtained": 0.050929581789406514,
+            "tolerance": 0.01,
+            "difference": 0.000029581789406513126,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.vol",
+            "expected": 78.53981633974482,
+            "obtained": 78.53981633974482,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.psad",
+            "expected": 0.050929581789406514,
+            "obtained": 0.050929581789406514,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "79",
+            "obtained": "79",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mL",
+            "obtained": "mL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "volume-prostatico",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "6 × 7 × 6 cm: 132 mL",
+      "originalInput": {
+        "long": 6,
+        "transv": 7,
+        "ap": 6
+      },
+      "input": {
+        "long": 6,
+        "transv": 7,
+        "ap": 6
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "vol": 131.947
+        },
+        "verdict": "&gt; 80",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "132",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "raw": {
+          "vol": 131.94689145077132,
+          "psad": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/volume-prostatico/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "long": 6,
+            "transv": 7,
+            "ap": 6
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/volume-prostatico/calculate",
+          "startedAt": "2026-10-05T17:40:02.073Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "volume-prostatico",
+              "main": [
+                "132",
+                "mL"
+              ],
+              "label": "Volume prostático estimado",
+              "raw": {
+                "vol": 131.94689145077132,
+                "psad": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "cdf82aafc3682162c96328bb96eb38ed9c3d45f8a1fcb1440b56d26d7700c683",
+          "bytes": 177,
+          "elapsedMs": 6.381699999998091
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/volume-prostatico/calculate",
+        "startedAt": "2026-10-05T17:40:02.073Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "volume-prostatico",
+            "main": [
+              "132",
+              "mL"
+            ],
+            "label": "Volume prostático estimado",
+            "raw": {
+              "vol": 131.94689145077132,
+              "psad": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "cdf82aafc3682162c96328bb96eb38ed9c3d45f8a1fcb1440b56d26d7700c683",
+        "bytes": 177,
+        "elapsedMs": 6.381699999998091
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.vol",
+            "expected": 131.947,
+            "obtained": 131.94689145077132,
+            "tolerance": 0.01,
+            "difference": 0.00010854922868475114,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.vol",
+            "expected": 131.94689145077132,
+            "obtained": 131.94689145077132,
+            "tolerance": 1.3194689145077131e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.psad",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "132",
+            "obtained": "132",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mL",
+            "obtained": "mL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
