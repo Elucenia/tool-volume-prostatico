@@ -1,0 +1,1099 @@
+{
+  "id": "volume-prostatico",
+  "implementationVersion": "volume-prostatico@native-2026-10-05+aadb2294d7ef",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fórmula do elipsoide (π/6 ≈ 0,52)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4,0 × 4,5 × 3,5 cm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Próstata aumentada (30 a 80 mL)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fórmula do elipsoide (π/6 ≈ 0,52)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5,0 × 6,0 × 5,0 cm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Densidade do PSA",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,05 ng/mL/cm³",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Próstata aumentada (30 a 80 mL)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fórmula do elipsoide (π/6 ≈ 0,52)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6,0 × 7,0 × 6,0 cm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Próstata muito aumentada (> 80 mL)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ellipsoid formula (π/6 ≈ 0.52)",
+                "locale": "en",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "4.0 × 4.5 × 3.5 cm",
+                "locale": "en",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  4,
+                  4.5,
+                  3.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Enlarged prostate (30 to 80 mL)",
+            "locale": "en",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ellipsoid formula (π/6 ≈ 0.52)",
+                "locale": "en",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "5.0 × 6.0 × 5.0 cm",
+                "locale": "en",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "PSA density",
+                "locale": "en",
+                "template": "documented-authored-f25e2fadebfb50675412"
+              },
+              "value": {
+                "text": "0.05 ng/mL/cm³",
+                "locale": "en",
+                "template": "documented-authored-5e8769a27da0c92430d0",
+                "sourceNumbers": [
+                  0.05
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Enlarged prostate (30 to 80 mL)",
+            "locale": "en",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ellipsoid formula (π/6 ≈ 0.52)",
+                "locale": "en",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "6.0 × 7.0 × 6.0 cm",
+                "locale": "en",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  6,
+                  7,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Markedly enlarged prostate (> 80 mL)",
+            "locale": "en",
+            "template": "documented-authored-387b85cb1bb45a9b3db7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fórmula del elipsoide (π/6 ≈ 0,52)",
+                "locale": "es",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "4,0 × 4,5 × 3,5 cm",
+                "locale": "es",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  4,
+                  4.5,
+                  3.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Próstata aumentada (30 a 80 mL)",
+            "locale": "es",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fórmula del elipsoide (π/6 ≈ 0,52)",
+                "locale": "es",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "5,0 × 6,0 × 5,0 cm",
+                "locale": "es",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Densidad del PSA",
+                "locale": "es",
+                "template": "documented-authored-f25e2fadebfb50675412"
+              },
+              "value": {
+                "text": "0,05 ng/mL/cm³",
+                "locale": "es",
+                "template": "documented-authored-5e8769a27da0c92430d0",
+                "sourceNumbers": [
+                  0.05
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Próstata aumentada (30 a 80 mL)",
+            "locale": "es",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fórmula del elipsoide (π/6 ≈ 0,52)",
+                "locale": "es",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "6,0 × 7,0 × 6,0 cm",
+                "locale": "es",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  6,
+                  7,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Próstata muy aumentada (> 80 mL)",
+            "locale": "es",
+            "template": "documented-authored-387b85cb1bb45a9b3db7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Formule de l’ellipsoïde (π/6 ≈ 0,52)",
+                "locale": "fr",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "4,0 × 4,5 × 3,5 cm",
+                "locale": "fr",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  4,
+                  4.5,
+                  3.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Prostate augmentée (30 à 80 mL)",
+            "locale": "fr",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Formule de l’ellipsoïde (π/6 ≈ 0,52)",
+                "locale": "fr",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "5,0 × 6,0 × 5,0 cm",
+                "locale": "fr",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Densité du PSA",
+                "locale": "fr",
+                "template": "documented-authored-f25e2fadebfb50675412"
+              },
+              "value": {
+                "text": "0,05 ng/mL/cm³",
+                "locale": "fr",
+                "template": "documented-authored-5e8769a27da0c92430d0",
+                "sourceNumbers": [
+                  0.05
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Prostate augmentée (30 à 80 mL)",
+            "locale": "fr",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Formule de l’ellipsoïde (π/6 ≈ 0,52)",
+                "locale": "fr",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "6,0 × 7,0 × 6,0 cm",
+                "locale": "fr",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  6,
+                  7,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Prostate très augmentée (> 80 mL)",
+            "locale": "fr",
+            "template": "documented-authored-387b85cb1bb45a9b3db7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ellipsoidformel (π/6 ≈ 0,52)",
+                "locale": "de",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "4,0 × 4,5 × 3,5 cm",
+                "locale": "de",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  4,
+                  4.5,
+                  3.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vergrößerte Prostata (30 bis 80 mL)",
+            "locale": "de",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ellipsoidformel (π/6 ≈ 0,52)",
+                "locale": "de",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "5,0 × 6,0 × 5,0 cm",
+                "locale": "de",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "PSA-Dichte",
+                "locale": "de",
+                "template": "documented-authored-f25e2fadebfb50675412"
+              },
+              "value": {
+                "text": "0,05 ng/mL/cm³",
+                "locale": "de",
+                "template": "documented-authored-5e8769a27da0c92430d0",
+                "sourceNumbers": [
+                  0.05
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vergrößerte Prostata (30 bis 80 mL)",
+            "locale": "de",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ellipsoidformel (π/6 ≈ 0,52)",
+                "locale": "de",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "6,0 × 7,0 × 6,0 cm",
+                "locale": "de",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  6,
+                  7,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Deutlich vergrößerte Prostata (> 80 mL)",
+            "locale": "de",
+            "template": "documented-authored-387b85cb1bb45a9b3db7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Formula ellissoidale (π/6 ≈ 0,52)",
+                "locale": "it",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "4,0 × 4,5 × 3,5 cm",
+                "locale": "it",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  4,
+                  4.5,
+                  3.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Prostata ingrandita (30 a 80 mL)",
+            "locale": "it",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Formula ellissoidale (π/6 ≈ 0,52)",
+                "locale": "it",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "5,0 × 6,0 × 5,0 cm",
+                "locale": "it",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Densità del PSA",
+                "locale": "it",
+                "template": "documented-authored-f25e2fadebfb50675412"
+              },
+              "value": {
+                "text": "0,05 ng/mL/cm³",
+                "locale": "it",
+                "template": "documented-authored-5e8769a27da0c92430d0",
+                "sourceNumbers": [
+                  0.05
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Prostata ingrandita (30 a 80 mL)",
+            "locale": "it",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Formula ellissoidale (π/6 ≈ 0,52)",
+                "locale": "it",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "6,0 × 7,0 × 6,0 cm",
+                "locale": "it",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  6,
+                  7,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Prostata molto aumentata (> 80 mL)",
+            "locale": "it",
+            "template": "documented-authored-387b85cb1bb45a9b3db7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "صيغة الإهليلج (π/6 ≈ 0,52)",
+                "locale": "ar",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "٤٫٠ × ٤٫٥ × ٣٫٥ cm",
+                "locale": "ar",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  4,
+                  4.5,
+                  3.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تضخم البروستاتا (30 إلى 80 mL)",
+            "locale": "ar",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "صيغة الإهليلج (π/6 ≈ 0,52)",
+                "locale": "ar",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "٥٫٠ × ٦٫٠ × ٥٫٠ cm",
+                "locale": "ar",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "كثافة PSA",
+                "locale": "ar",
+                "template": "documented-authored-f25e2fadebfb50675412"
+              },
+              "value": {
+                "text": "٠٫٠٥ ng/mL/cm³",
+                "locale": "ar",
+                "template": "documented-authored-5e8769a27da0c92430d0",
+                "sourceNumbers": [
+                  0.05
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تضخم البروستاتا (30 إلى 80 mL)",
+            "locale": "ar",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "صيغة الإهليلج (π/6 ≈ 0,52)",
+                "locale": "ar",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "٦٫٠ × ٧٫٠ × ٦٫٠ cm",
+                "locale": "ar",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  6,
+                  7,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تضخم شديد في البروستاتا (> 80 mL)",
+            "locale": "ar",
+            "template": "documented-authored-387b85cb1bb45a9b3db7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "椭球公式（π/6 ≈ 0.52）",
+                "locale": "zh",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "4.0 × 4.5 × 3.5 cm",
+                "locale": "zh",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  4,
+                  4.5,
+                  3.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "前列腺增大（30 至 80 mL）",
+            "locale": "zh",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "椭球公式（π/6 ≈ 0.52）",
+                "locale": "zh",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "5.0 × 6.0 × 5.0 cm",
+                "locale": "zh",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "PSA 密度",
+                "locale": "zh",
+                "template": "documented-authored-f25e2fadebfb50675412"
+              },
+              "value": {
+                "text": "0.05 ng/mL/cm³",
+                "locale": "zh",
+                "template": "documented-authored-5e8769a27da0c92430d0",
+                "sourceNumbers": [
+                  0.05
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "前列腺增大（30 至 80 mL）",
+            "locale": "zh",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "椭球公式（π/6 ≈ 0.52）",
+                "locale": "zh",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "6.0 × 7.0 × 6.0 cm",
+                "locale": "zh",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  6,
+                  7,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "前列腺明显增大（> 80 mL）",
+            "locale": "zh",
+            "template": "documented-authored-387b85cb1bb45a9b3db7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "楕円体式（π/6 ≈ 0.52）",
+                "locale": "ja",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "4.0 × 4.5 × 3.5 cm",
+                "locale": "ja",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  4,
+                  4.5,
+                  3.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "前立腺肥大（30～80 mL）",
+            "locale": "ja",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "楕円体式（π/6 ≈ 0.52）",
+                "locale": "ja",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "5.0 × 6.0 × 5.0 cm",
+                "locale": "ja",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "PSA密度",
+                "locale": "ja",
+                "template": "documented-authored-f25e2fadebfb50675412"
+              },
+              "value": {
+                "text": "0.05 ng/mL/cm³",
+                "locale": "ja",
+                "template": "documented-authored-5e8769a27da0c92430d0",
+                "sourceNumbers": [
+                  0.05
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "前立腺肥大（30～80 mL）",
+            "locale": "ja",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "楕円体式（π/6 ≈ 0.52）",
+                "locale": "ja",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "6.0 × 7.0 × 6.0 cm",
+                "locale": "ja",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  6,
+                  7,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "著明に増大した前立腺（> 80 mL）",
+            "locale": "ja",
+            "template": "documented-authored-387b85cb1bb45a9b3db7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "4 × 4,5 × 3,5 cm: 33 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दीर्घवृत्तीय सूत्र (π/6 ≈ 0,52)",
+                "locale": "hi",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "4.0 × 4.5 × 3.5 cm",
+                "locale": "hi",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  4,
+                  4.5,
+                  3.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "बढ़ी हुई प्रोस्टेट (30 से 80 mL)",
+            "locale": "hi",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दीर्घवृत्तीय सूत्र (π/6 ≈ 0,52)",
+                "locale": "hi",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "5.0 × 6.0 × 5.0 cm",
+                "locale": "hi",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  5,
+                  6,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "PSA घनत्व",
+                "locale": "hi",
+                "template": "documented-authored-f25e2fadebfb50675412"
+              },
+              "value": {
+                "text": "0.05 ng/mL/cm³",
+                "locale": "hi",
+                "template": "documented-authored-5e8769a27da0c92430d0",
+                "sourceNumbers": [
+                  0.05
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "बढ़ी हुई प्रोस्टेट (30 से 80 mL)",
+            "locale": "hi",
+            "template": "documented-authored-181d68b1f34358739eed"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "6 × 7 × 6 cm: 132 mL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दीर्घवृत्तीय सूत्र (π/6 ≈ 0,52)",
+                "locale": "hi",
+                "template": "documented-authored-e2b02c4ab19a34c17db4"
+              },
+              "value": {
+                "text": "6.0 × 7.0 × 6.0 cm",
+                "locale": "hi",
+                "template": "documented-authored-388d6d30821a63b28828",
+                "sourceNumbers": [
+                  6,
+                  7,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "प्रोस्टेट बहुत बढ़ा हुआ (> 80 mL)",
+            "locale": "hi",
+            "template": "documented-authored-387b85cb1bb45a9b3db7"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

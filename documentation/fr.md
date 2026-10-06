@@ -79,3 +79,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Prostate augmentée (30 à 80 mL)
+
+| Détails du résultat | |
+| --- | --- |
+| Formule de l’ellipsoïde (π/6 ≈ 0,52) | 4,0 × 4,5 × 3,5 cm |
+
+
+### 2
+
+Prostate augmentée (30 à 80 mL)
+
+| Détails du résultat | |
+| --- | --- |
+| Formule de l’ellipsoïde (π/6 ≈ 0,52) | 5,0 × 6,0 × 5,0 cm |
+| Densité du PSA | 0,05 ng/mL/cm³ |
+
+
+### 3
+
+Prostate très augmentée (> 80 mL)
+
+| Détails du résultat | |
+| --- | --- |
+| Formule de l’ellipsoïde (π/6 ≈ 0,52) | 6,0 × 7,0 × 6,0 cm |
+

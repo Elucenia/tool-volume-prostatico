@@ -79,3 +79,35 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Prostata ingrandita (30 a 80 mL)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Formula ellissoidale (π/6 ≈ 0,52) | 4,0 × 4,5 × 3,5 cm |
+
+
+### 2
+
+Prostata ingrandita (30 a 80 mL)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Formula ellissoidale (π/6 ≈ 0,52) | 5,0 × 6,0 × 5,0 cm |
+| Densità del PSA | 0,05 ng/mL/cm³ |
+
+
+### 3
+
+Prostata molto aumentata (> 80 mL)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Formula ellissoidale (π/6 ≈ 0,52) | 6,0 × 7,0 × 6,0 cm |
+

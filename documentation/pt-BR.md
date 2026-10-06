@@ -79,3 +79,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Próstata aumentada (30 a 80 mL)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Fórmula do elipsoide (π/6 ≈ 0,52) | 4,0 × 4,5 × 3,5 cm |
+
+
+### 2
+
+Próstata aumentada (30 a 80 mL)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Fórmula do elipsoide (π/6 ≈ 0,52) | 5,0 × 6,0 × 5,0 cm |
+| Densidade do PSA | 0,05 ng/mL/cm³ |
+
+
+### 3
+
+Próstata muito aumentada (> 80 mL)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Fórmula do elipsoide (π/6 ≈ 0,52) | 6,0 × 7,0 × 6,0 cm |
+

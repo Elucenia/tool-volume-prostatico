@@ -79,3 +79,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Enlarged prostate (30 to 80 mL)
+
+| Result details | |
+| --- | --- |
+| Ellipsoid formula (π/6 ≈ 0.52) | 4.0 × 4.5 × 3.5 cm |
+
+
+### 2
+
+Enlarged prostate (30 to 80 mL)
+
+| Result details | |
+| --- | --- |
+| Ellipsoid formula (π/6 ≈ 0.52) | 5.0 × 6.0 × 5.0 cm |
+| PSA density | 0.05 ng/mL/cm³ |
+
+
+### 3
+
+Markedly enlarged prostate (> 80 mL)
+
+| Result details | |
+| --- | --- |
+| Ellipsoid formula (π/6 ≈ 0.52) | 6.0 × 7.0 × 6.0 cm |
+

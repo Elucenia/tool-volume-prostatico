@@ -1,0 +1,206 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "volume-prostatico",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "f51f2df617c74e16c623ae8ccac08152a5c99374",
+    "oldEngineSha256": "df0c163d0f19e0790a57f42edc406691df987836c47ce9b52351ed950c166550",
+    "currentEngineSha256": "aadb2294d7effe052a957941d5e19e83d53f1d95afb2eb0da4fd11d0dd57f58a"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "4 × 4,5 × 3,5 cm: 33 mL",
+      "input": {
+        "long": 4,
+        "transv": 4.5,
+        "ap": 3.5
+      },
+      "publicOutput": {
+        "id": "volume-prostatico",
+        "main": [
+          "33",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "raw": {
+          "vol": 32.98672286269283,
+          "psad": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "vol": 32.987
+        },
+        "main": "33",
+        "level": "info",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "33",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "level": "info",
+        "verdict": "Próstata aumentada (30 a 80 mL)",
+        "rows": [
+          [
+            "Fórmula do elipsoide (π/6 ≈ 0,52)",
+            "4,0 × 4,5 × 3,5 cm"
+          ]
+        ],
+        "raw": {
+          "vol": 32.98672286269283,
+          "psad": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "5 × 6 × 5 cm com PSA 4: 78,5 mL, densidade 0,05",
+      "input": {
+        "long": 5,
+        "transv": 6,
+        "ap": 5,
+        "psa": 4
+      },
+      "publicOutput": {
+        "id": "volume-prostatico",
+        "main": [
+          "79",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "raw": {
+          "vol": 78.53981633974482,
+          "psad": 0.050929581789406514
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "vol": 78.54,
+          "psad": 0.0509
+        },
+        "verdict": "30 a 80",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "79",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "level": "info",
+        "verdict": "Próstata aumentada (30 a 80 mL)",
+        "rows": [
+          [
+            "Fórmula do elipsoide (π/6 ≈ 0,52)",
+            "5,0 × 6,0 × 5,0 cm"
+          ],
+          [
+            "Densidade do PSA",
+            "0,05 ng/mL/cm³"
+          ]
+        ],
+        "raw": {
+          "vol": 78.53981633974482,
+          "psad": 0.050929581789406514
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "6 × 7 × 6 cm: 132 mL",
+      "input": {
+        "long": 6,
+        "transv": 7,
+        "ap": 6
+      },
+      "publicOutput": {
+        "id": "volume-prostatico",
+        "main": [
+          "132",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "raw": {
+          "vol": 131.94689145077132,
+          "psad": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "vol": 131.947
+        },
+        "verdict": "&gt; 80",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "132",
+          "mL"
+        ],
+        "label": "Volume prostático estimado",
+        "level": "info",
+        "verdict": "Próstata muito aumentada (&gt; 80 mL)",
+        "rows": [
+          [
+            "Fórmula do elipsoide (π/6 ≈ 0,52)",
+            "6,0 × 7,0 × 6,0 cm"
+          ]
+        ],
+        "raw": {
+          "vol": 131.94689145077132,
+          "psad": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

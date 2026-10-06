@@ -137,7 +137,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Elipsoideπ/6×3 diâmetros/Terris Stamey 1991; PSAdensidade PSA/volume",
-    "implementationVersion": "volume-prostatico@native-2026-10-03+df0c163d0f19",
+    "implementationVersion": "volume-prostatico@native-2026-10-05+aadb2294d7ef",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2016815/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -247,7 +247,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "df0c163d0f19e0790a57f42edc406691df987836c47ce9b52351ed950c166550"
+      "implementationHash": "aadb2294d7effe052a957941d5e19e83d53f1d95afb2eb0da4fd11d0dd57f58a",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "volume-prostatico@native-2026-10-03+df0c163d0f19",
+          "previousImplementationHash": "df0c163d0f19e0790a57f42edc406691df987836c47ce9b52351ed950c166550",
+          "implementationHash": "aadb2294d7effe052a957941d5e19e83d53f1d95afb2eb0da4fd11d0dd57f58a",
+          "scientificBodySha256": "98824159a687af6cd24bfaa6f6a10965a4ed26f0657845647525408b9a42e5e7",
+          "metadataContractHash": "263bcdaa06337fd4e2cbf4711b2d68bb46554cd69dc96e1e08a85df69258f1fc",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A fórmula elipsoide é uma aproximação geométrica. O estudo citado comparou estimativas por ultrassom transretal ao peso de peças cirúrgicas e observou desempenho diferente entre métodos e tamanhos. Não confirma automaticamente equivalência entre RM e ultrassom ou diagnóstico por densidade de PSA.",
     "sourceLimitEvidence": {
@@ -266,20 +294,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/volume-prostatico/calculator.js",
-    "bytes": 5074,
-    "sha256": "df0c163d0f19e0790a57f42edc406691df987836c47ce9b52351ed950c166550"
+    "bytes": 5279,
+    "sha256": "aadb2294d7effe052a957941d5e19e83d53f1d95afb2eb0da4fd11d0dd57f58a"
   },
-  "sourceToolSha256": "2c1a8d2b01a1917ee7ab5b8f9b9230805fdef21113e9ca6fad0914e58bc568b0",
+  "sourceToolSha256": "bf7b51d407b1d67c78137026022650b42ecadb6b3c40303e329ba7a6232e274b",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "8172b1fdd8682f6c7787d7b94f19f3101027c1ccfdf3b9293b95ca3cc96688b8",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 2,
       "sha256": "8172b1fdd8682f6c7787d7b94f19f3101027c1ccfdf3b9293b95ca3cc96688b8",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

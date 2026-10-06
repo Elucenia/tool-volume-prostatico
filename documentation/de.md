@@ -79,3 +79,35 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Vergrößerte Prostata (30 bis 80 mL)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Ellipsoidformel (π/6 ≈ 0,52) | 4,0 × 4,5 × 3,5 cm |
+
+
+### 2
+
+Vergrößerte Prostata (30 bis 80 mL)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Ellipsoidformel (π/6 ≈ 0,52) | 5,0 × 6,0 × 5,0 cm |
+| PSA-Dichte | 0,05 ng/mL/cm³ |
+
+
+### 3
+
+Deutlich vergrößerte Prostata (> 80 mL)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Ellipsoidformel (π/6 ≈ 0,52) | 6,0 × 7,0 × 6,0 cm |
+
